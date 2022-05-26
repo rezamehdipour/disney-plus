@@ -1,0 +1,58 @@
+.detail {
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+
+.detailContent {
+	max-width: 870px;
+}
+
+.buttonsBox {
+	display: grid;
+	gap: 1rem;
+	grid-template-columns: repeat(2, min-content);
+
+	@media (min-width: 640px) {
+		grid-template-columns: repeat(4, min-content);
+	}
+}
+
+.squareButtons {
+	border: 1px solid var(--primary);
+
+	> i {
+		font-size: 20px;
+	}
+}
+
+.playButton {
+	background-color: hsl(0, 0%, 100%);
+	color: black;
+	&:hover {
+		background-color: hsl(0, 0%, 85%);
+	}
+}
+
+.trailerButton {
+	background-color: rgba(0, 0, 0, 0.2);
+	&:hover {
+		background-color: rgba(0, 0, 0, 0.4);
+	}
+}
+
+.circleButtons {
+	width: 45px;
+	height: 45px;
+	border: 1px solid var(--primary);
+	border-radius: 50%;
+	color: white;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	> i {
+		font-size: 20px;
+	}
+}

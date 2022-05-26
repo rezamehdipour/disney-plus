@@ -1,0 +1,12 @@
+.moviesMovie {
+	box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.1);
+
+	&:hover {
+		transform: scale(1.04);
+		box-shadow: 0px 0px 0px 3px rgba(255, 255, 255, 1);
+
+		video {
+			opacity: 1;
+		}
+	}
+}

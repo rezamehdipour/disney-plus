@@ -1,0 +1,16 @@
+.intro {
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.introContentWrapper {
+	max-width: 650px;
+}
+
+.introContentButton {
+	background-color: #0063e5;
+	&:hover {
+		background-color: hsl(214, 100%, 50%);
+	}
+}

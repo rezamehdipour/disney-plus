@@ -1,0 +1,50 @@
+:root {
+	--primary: #fcfcfc;
+
+	--bg-primary: #0f172a;
+}
+
+.wrapper {
+	width: calc(100% - 30px);
+	margin-right: auto;
+	margin-left: auto;
+
+	@media (min-width: 640px) {
+		width: calc(100% - 50px);
+	}
+	@media (min-width: 768px) {
+		width: calc(100% - 70px);
+	}
+	@media (min-width: 1024px) {
+		width: calc(100% - 90px);
+	}
+	@media (min-width: 1280px) {
+		width: calc(100% - 110px);
+	}
+	@media (min-width: 1536px) {
+		width: calc(100% - 130px);
+	}
+}
+
+/* TailwindCSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	body {
+		position: relative;
+		font-family: "Montserrat", sans-serif;
+		color: var(--primary);
+		background-color: var(--bg-primary);
+	}
+	svg {
+		display: block;
+	}
+}
+
+@layer components {
+	.flex-center {
+		@apply flex items-center justify-center;
+	}
+}

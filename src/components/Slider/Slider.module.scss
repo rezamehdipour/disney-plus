@@ -1,0 +1,17 @@
+.slider {
+	[class~="swiper-pagination"] {
+		bottom: -1px !important;
+
+		[class~="swiper-pagination-bullet"] {
+			// Active state
+			--swiper-pagination-color: #fcfcfc;
+
+			// Inactive state
+			--swiper-pagination-bullet-width: 10px;
+			--swiper-pagination-bullet-height: 10px;
+
+			--swiper-pagination-bullet-inactive-color: #000;
+			--swiper-pagination-bullet-inactive-opacity: 0.5;
+		}
+	}
+}
